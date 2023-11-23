@@ -1,0 +1,209 @@
+.aximo-auto-slider{
+  &-section{
+    padding: 20px 0;
+    overflow: hidden;
+    background-color: var(--dark-bg);
+  }
+  &-item{
+    display: flex;
+    margin: -1px;
+    align-items: center;
+    h3{
+      font-size: 35px;
+      white-space: nowrap;
+      padding: 0 24px;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      @include max(767px) {
+        font-size: 28px;
+      }
+    }
+    img{
+      -webkit-animation: rotate-animation 7s infinite linear;
+      -moz-animation: rotate-animation 7s infinite linear;
+      -o-animation: rotate-animation 7s infinite linear;
+      animation: rotate-animation 7s infinite linear;
+    }
+  }
+  
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+  }
+  .swiper-slide{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center;
+    align-items: center; 
+    width: auto; 
+    position: relative; 
+    overflow: hidden; 
+    margin: -1px;
+  }
+}
+
+
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.aximo-brandlogo{
+  &-section{
+    padding: 100px 0;
+    border-radius: 5px;
+    background-color: #1B1B1B;
+   @include max(991px) {
+    padding: 80px 0;
+   }
+   @include max(767px) {
+    padding: 60px 0;
+   }
+  }
+  &-title{
+    text-align: center;
+    margin-bottom: 60px;
+    @include max(767px) {
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 21px;
+      color: var(--light-color1);
+    }
+  }
+  &-item{
+    margin: 0 40px;
+  }
+  
+}
+
+
+
+.extra-side-margin{
+  margin: 0 50px;
+  @include max(991px) {
+    margin: 0 20px;
+  }
+  @include max(767px) {
+    margin: 0 12px;
+  }
+}
+
+// home 3
+.aximo-auto-text-slider-section{
+  padding: 20px;
+  background-color: var(--dark-bg);
+  .aximo-auto-slider-item{
+    h3{
+      padding: 0 12px;
+      letter-spacing: 1px;
+      font-family: $heading-font3;
+      &:nth-child(1){
+        
+      }
+    }
+    
+  }
+  .swiper-slide{
+    &:nth-child(1) .aximo-auto-slider-item h3{
+      color: #8D7DFF;
+    }
+    &:nth-child(2) .aximo-auto-slider-item h3{
+      color: #FF7545;
+    }
+    &:nth-child(3) .aximo-auto-slider-item h3{
+      color: #FF94FF;
+    }
+    &:nth-child(4) .aximo-auto-slider-item h3{
+      color: #FFE757;
+    }
+    &:nth-child(5) .aximo-auto-slider-item h3{
+      color: #8D7DFF;
+    }
+    &:nth-child(6) .aximo-auto-slider-item h3{
+      color: #FF7545;
+    }
+    &:nth-child(7) .aximo-auto-slider-item h3{
+      color: #8D7DFF;
+    }
+    &:nth-child(8) .aximo-auto-slider-item h3{
+      color: #FF7545;
+    }
+    &:nth-child(9) .aximo-auto-slider-item h3{
+      color: #FF94FF;
+    }
+    &:nth-child(10) .aximo-auto-slider-item h3{
+      color: #FFE757;
+    }
+    &:nth-child(11) .aximo-auto-slider-item h3{
+      color: #8D7DFF;
+    }
+    &:nth-child(12) .aximo-auto-slider-item h3{
+      color: #FF7545;
+    }
+    &:nth-child(13) .aximo-auto-slider-item h3{
+      color: #8D7DFF;
+    }
+    &:nth-child(14) .aximo-auto-slider-item h3{
+      color: #FF7545;
+    }
+    &:nth-child(15) .aximo-auto-slider-item h3{
+      color: #FF94FF;
+    }
+    &:nth-child(16) .aximo-auto-slider-item h3{
+      color: #FFE757;
+    }
+    &:nth-child(17) .aximo-auto-slider-item h3{
+      color: #8D7DFF;
+    }
+    &:nth-child(18) .aximo-auto-slider-item h3{
+      color: #FF7545;
+    }
+  }
+}
+
+// v4
+
+.aximo-brandlogo{
+  &-section2{
+    padding: 100px 0;
+    border-radius: 20px;
+    background-color: #191931;
+    @include max(991px) {
+      padding: 80px 0;
+     }
+     @include max(767px) {
+      padding: 60px 0;
+     }
+  }
+  &-title2{
+    text-align: center;
+    margin-bottom: 60px;
+    @include max(767px) {
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--orange-color2);
+    }
+  }
+  &-item{
+    margin: 0 40px;
+  }
+  
+}

@@ -1,0 +1,153 @@
+.aximo-team{
+  &-wrap{
+    margin-bottom: 30px;
+    &:hover .team-social{
+      opacity: 1;
+      visibility: visible;
+      bottom: 24px;
+    }
+  }
+  &-thumb{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid var(--dark-bg);
+    img{
+      transition: all 0.5s;
+      transform: scale(1);
+      &:hover{
+        transform: translate3d(0,0,0) scale(1.05);
+      }
+    }
+  }
+  &-data{
+    margin-top: 25px;
+    text-align: center;
+    h3{
+      margin-bottom: 7px;
+    }
+    p{
+      font-size: 21px;
+    }
+  }
+}
+
+.team-social{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.aximo-team{
+  &-wrap2{
+    padding: 20px 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid var(--heading-color);
+      
+      &:hover .aximo-team-thumb2 img{
+        transform: translate3d(0,0,0) scale(1.05);
+      }
+    
+  }
+  &-thumb2{
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+      transform: scale(1);
+      transition: all 0.5s;
+    }
+    
+    
+  }
+  &-data2{
+    padding: 30px;
+    h4{
+      font-family: $heading-font3;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 21px;
+    }
+  }
+}
+
+.aximo-team-details-thumb{
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 40px;
+  border: 5px solid var(--heading-color);
+  @include max(1199px) {
+    margin-right: 0;
+  }
+  @include max(991px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.aximo-team-setails{
+  margin-bottom: 30px;
+  h3{
+    margin-bottom: 12px;
+  }
+  ul{
+    li{
+      margin-bottom: 25px;
+      position: relative;
+      padding-left: 15px;
+      &:before {
+        content: "";
+        left: 0;
+        top: 11px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100px;
+        position: absolute;
+        background-color: var(--dark-bg);
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      span{
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.aximo-skillbar {
+  &-box{
+    height: 10px;
+    background-color: var(--dark-bg);
+    border-radius: 10px;
+    position: relative;    
+  }
+  margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+}
+
+p.aximo-skillbar-lable{
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+  .skillbar-bar{
+    height: 10px;
+    width: 0px;
+    background: #FBC21D;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-bottom: 0px;
+    background-color: var(--accent-bg);
+  }

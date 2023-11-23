@@ -1,0 +1,26 @@
+
+.aximo-about-section.bg-orange {
+  padding: 125px 0 130px;
+  margin-top: 100px;
+  position: relative;
+  @include max(991px) {
+    padding: 100px 0;
+    margin-top: 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
+
+.aximo-thumb {
+  border: 10px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transform: rotate(-5deg);
+  margin-top: -190px;
+  margin-right: 36px;
+  @include max(991px) {
+    transform: rotate(-0deg)!important;
+    margin: 0 0 40px;
+  }
+}

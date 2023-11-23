@@ -1,0 +1,364 @@
+.section{
+  z-index: 0;
+}
+
+
+.aximo-section-padding{
+  padding: 125px 0 130px;
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
+
+.aximo-section-padding2{
+  padding: 130px 0;
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
+
+.aximo-section-padding3{
+  padding: 125px 0 100px;
+  @include max(991px) {
+    padding: 100px 0 70px;
+  }
+  @include max(767px) {
+    padding: 80px 0 50px;
+  }
+}
+
+.aximo-section-padding4{
+  padding: 125px 0 0;
+  @include max(991px) {
+    padding: 100px 0 0;
+  }
+  @include max(767px) {
+    padding: 80px 0 0;
+  }
+}
+
+.aximo-section-padding5{
+  padding: 130px 0 106px;
+  @include max(991px) {
+    padding: 100px 0 76px;
+  }
+  @include max(767px) {
+    padding: 80px 0 56px;
+  }
+}
+
+.aximo-section-padding6{
+  padding: 0 0 130px;
+  @include max(991px) {
+    padding: 0 0 100px;
+  }
+  @include max(767px) {
+    padding: 0 0 80px;
+  }
+}
+
+.aximo-subtitle{
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 600;
+  color: var(--orange-color2);
+}
+.aximo-section-title{
+  &.center{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+    &.full-width{
+      max-width: 100%;
+    }
+    &.title-description{
+      max-width: 850px;
+      @include max(1199px) {
+        max-width: 650px
+      }
+      h2{
+        margin-bottom: 24px;
+        @include max(991px) {
+          margin: 0;
+        }
+      }
+      
+    }
+    @include max(1199px) {
+      max-width: 650px
+    }
+  }
+    padding-bottom: 80px;
+    @include max(991px) {
+      padding-bottom: 60px;
+    }
+    @include max(767px) {
+      padding-bottom: 40px;
+  }
+  @include max(991px) {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  p{
+    font-size: 21px;
+    @include max(991px) {
+      font-size: 18px;
+      padding-top: 18px;
+    }
+  }
+  
+img{
+  border-radius: 100px;
+}
+  &.light{
+    h2{
+      color: var(--white-smoke);
+    }
+  }
+
+  &.clash-grotesk{
+    h2{
+      font-size: 80px;
+      font-weight: 600;
+      color: var(--heading-color2);
+      font-family: $heading-font2;
+      @include max(1199px) { 
+        font-size: 60px;
+      }
+      @include max(767px) { 
+        font-size: 40px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+    
+  }
+  &.familjen-grotesk{
+    h2{
+      font-size: 84px;
+      letter-spacing: -1px;
+      line-height: 1em;
+      color: var(--heading-color2);
+      font-family: $heading-font3;
+      @include max(1199px) { 
+        font-size: 60px;
+      }
+      @include max(767px) { 
+        font-size: 48px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+    &.light{
+      h2{
+        color: var(--light-color2);
+      }
+    }                            
+    
+  }
+  &.arimo-font{
+    h2{
+      font-size: 75px;
+      letter-spacing: -1px;
+      line-height: 1em;
+      color: var(--heading-color3);
+      font-family: $heading-font4;
+      @include max(1400px) { 
+        font-size: 60px;
+      }
+      @include max(1199px) { 
+        font-size: 48px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+    &.light{
+      h2{
+        color: var(--light-color3);
+      }
+    }                            
+    
+  }
+  &.libre-font{
+    h2{
+      letter-spacing: -0.5px;
+      color: var(--heading-color4);
+      font-family: $heading-font5;
+    }
+    &.light{
+      h2{
+        color: var(--light-color4);
+      }
+    }                            
+    
+  }
+  
+}
+
+.aximo-default-content {
+  &.m-right-gap{
+    margin-right: 47px;
+    @include max(991px) {
+      margin-right: auto;
+    }
+  }
+  &.m-left-gap{
+    margin-left: 47px;
+    @include max(991px) {
+      margin-left: auto;
+    }
+  }
+  &.m-left-gap-small{
+    margin-left: 25px;
+    @include max(991px) {
+      margin-left: auto;
+    }
+  }
+  @include max(991px) {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  h2{
+    margin-bottom: 24px;
+    @include max(991px) {
+      margin-bottom: 15px;
+    }
+  }
+  p{
+    font-size: 21px;
+    @include max(767px) {
+      font-size: 18px;
+    }
+    strong{
+      font-weight: 600;
+    }
+    
+  }
+  &.light{
+    h2, p{
+      color: var(--white-smoke);
+    }
+  }
+  &.clash-grotesk{
+    h2{
+      font-size: 80px;
+      font-weight: 600;
+      color: var(--heading-color2);
+      font-family: $heading-font2;
+      letter-spacing: normal;
+      @include max(1399px) { 
+        font-size: 70px;
+      }
+      @include max(1199px) { 
+        font-size: 56px;
+      }
+      @include max(767px) { 
+        font-size: 40px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+  }
+  &.familjen-grotesk{
+    h2{
+      font-size: 84px;
+      letter-spacing: -1px;
+      line-height: 1em;
+      font-family: $heading-font3;
+      @include max(1399px) { 
+        font-size: 70px;
+      }
+      @include max(1199px) { 
+        font-size: 60px;
+      }
+      @include max(767px) { 
+        font-size: 40px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+    &.light{
+      h2, p{
+        color: var(--light-color2);
+      }
+    }
+  }
+  &.arimo-font{
+    h2{
+      font-size: 75px;
+      letter-spacing: -1px;
+      line-height: 1em;
+      color: var(--heading-color3);
+      font-family: $heading-font4;
+      @include max(1400px) { 
+        font-size: 60px;
+      }
+      @include max(1199px) { 
+        font-size: 48px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+                           
+    
+  }
+  &.libre-font{
+    h2{
+      color: var(--heading-color4);
+      font-family: $heading-font5;
+      letter-spacing: -0.5px;
+    }
+   
+  }
+}
+
+.aximo-title-icon {
+  position: absolute;
+  bottom: 4px;
+  right: -80px;
+  @include max(1199px) {
+    right: -65px;
+  }
+  img{
+    // -webkit-animation: rotate-animation 5s infinite linear;
+    //     -moz-animation: rotate-animation 5s infinite linear;
+    //     -o-animation: rotate-animation 5s infinite linear;
+    //     animation: rotate-animation 5s infinite linear;
+        @include max(1199px) {
+          width: 40px;
+        }
+        @include max(767px) {
+          display: none;
+        }
+  }
+  
+}
+
+
+.aximo-title-btn{
+  width: 100%;
+  text-align: right;
+  @include max(991px) {
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+.aximo-title-animation{
+  position: relative;
+  display: inline-block
+}

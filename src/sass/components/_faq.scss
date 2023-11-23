@@ -1,0 +1,384 @@
+.aximo-faq-wrap {
+  padding: 130px 0;
+  border-bottom: 1px solid #E6E6E6;
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+
+}
+
+.aximo-accordion{
+  &-wrap{
+    margin-left: 50px;
+    margin-right: 3px;
+    @include max(1199px) {
+      margin-left: 0;
+    }
+    @include max(991px) {
+      margin-top: 30px;
+    }
+  }
+  &-item{
+    padding: 24px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    border: 2px solid var(--dark-bg);
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &.open .aximo-accordion-header::before{
+      transform: rotate(180deg);
+    }
+    &.open{
+      background-color: var(--accent-bg);
+      box-shadow: 3px 3px 0 0 var(--dark-bg);
+      .aximo-accordion-body{
+        display: block;
+      }
+    }
+  }
+  &-header{
+    cursor: pointer;
+    position: relative;
+    h3{
+      @include max(767px) {
+        font-size: 24px;
+        padding-right: 25px;
+      }
+    }
+    
+    &::before{
+      content: "";
+      position: absolute;
+      right: 0;
+      transition: all .4s;
+      background-image: url(../images/v1/accordion-inactive.svg);
+      background-size: 30px;
+      background-position: center;
+      width: 30px;
+      height: 24px;
+      top: 10px;
+      z-index: 2;
+      background-repeat: no-repeat;
+      @include max(767px) {
+        top: 5px;
+      }
+    }
+   
+  }
+  &-body{
+    display: none;
+    padding-top: 15px;
+    &.default{
+      display: block;
+    }
+    @include max(991px) {
+      padding: 24px 0 0;
+    }
+  }
+}
+
+.aximo-accordion{
+  &-wrap2{
+    display: grid;
+    gap: 24px;
+    margin: 0;  
+    grid-template-columns: 1fr 1fr;
+    @include max(991px) {
+      grid-template-columns: 1fr;
+    }
+    .aximo-accordion-item{
+      padding: 30px;
+      border-radius: 5px;
+      background-color: #EBEAE4;
+      box-shadow: none;
+      border: none;
+      @include max(991px) {
+        padding: 24px;
+      }
+      &.open .active{
+        opacity: 1;
+      }
+      &.open .inactive{
+        opacity: 0;
+      }
+    }
+    .aximo-accordion-header{
+      h3{
+        font-family: $heading-font2;
+        color: var(--header-color2);
+        @include max(767px) {
+          font-size: 24px;
+          padding-right: 25px;
+        }
+      }
+      &::before{
+        content: none;
+      }
+    }
+    .aximo-accordion-icon {
+      position: absolute;
+      top: 4px;
+      right: 0;
+      transition: all 0.2s;
+      i{
+        font-size: 24px;
+      }
+      &.active{
+        opacity: 0;
+      }
+
+    }
+    .aximo-accordion-body{
+      padding-right: 65px;
+      @include max(991px) {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.aximo-accordion{
+  &-wrap3{
+    margin: 0;
+    margin-top: 60px;
+    counter-reset: section;
+    @include max(767px) {
+      margin-top: 30px;
+    }
+
+    .aximo-accordion-item{
+      padding: 0;
+      text-align: left;
+      border-radius: 5px;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      position: relative;
+      margin-bottom: 44px;
+      padding-left: 74px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+ 
+      &.open .aximo-accordion-header::before {
+        content: none;
+      }
+      &:before{
+        left: 0;
+        top: -8px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        font-size: 24px;
+        font-weight: 600;
+        border-radius: 50%;
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        border: 1px solid var(--heading-color);
+        counter-increment: section;
+        content:counter(section);
+        transition: all 0.4s;
+      }
+      &.open{
+        &:before{
+          background-color: var(--yellow-bg);
+          border: 1px solid var(--yellow-bg);
+        
+        }
+      }
+    
+    }
+    .aximo-accordion-header{
+      p{
+        font-size: 21px;
+        font-weight: 600;
+      }
+      h3{
+        @include max(767px) {
+          font-size: 24px;
+        }
+      }
+      &::before{
+        content: none;
+      }
+    }
+    .aximo-accordion-body{
+      p{
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+.aximo-accordion{
+  &-wrap4{
+    margin: 0;
+    .aximo-accordion-item{
+      padding: 30px 0;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      margin-bottom: 0;
+      border-top: 1px solid var(--heading-color);
+      @include max(991px) {
+        padding: 20px 0;
+      }
+      &.open{
+        background-color: transparent;
+      }
+      &:first-child{
+        padding-top: 0;
+        border-top: none;
+      }
+      &:last-child{
+        padding-bottom: 0;
+      }
+
+    
+    }
+    .aximo-accordion-header{
+      &::before{
+        background-image: url(../images/icon/arrow-bottom.svg);
+        background-size: 23px;
+        width: 23px;
+        height: 12px;
+        top: 20px;
+     
+      }
+      h3{
+        font-size: 35px;
+        font-family: $heading-font3;
+        @include max(991px) {
+          font-size: 30px;
+        }
+        @include max(767px) {
+          font-size: 24px;
+          padding-right: 25px;
+        }
+      }
+      
+    }
+    .aximo-accordion-body {
+      padding-right: 80px;
+      @include max(991px) {
+        padding-right: 20px;
+      }
+      p{
+        font-size: 21px;
+        @include max(991px) {
+          font-size: 18px;
+        }
+      }
+      
+    }
+  }
+
+}
+
+// faq normal
+.aximo-accordion-normal {
+  &-item{
+    display: flex;
+    margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @include max(991px) {
+      margin-bottom: 25px;
+    }
+  }
+  &-data{
+    h3{
+      margin-bottom: 13px;
+    }
+  }
+  &-icon{
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+}
+.responsive-margin{
+  @include max(991px) {
+    margin-bottom: 25px;
+  }
+}
+
+// faq 5
+
+.aximo-accordion{
+  &-wrap5{
+    margin: 0;
+    .aximo-accordion-item{
+      padding: 30px;
+      border-radius: 5px;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      margin-bottom: 0;
+      @include max(991px) {
+        padding: 24px;
+      }
+      &.open .active{
+        opacity: 1;
+      }
+      &.open .inactive{
+        opacity: 0;
+      }
+      &.open{
+        background-color: #EBDECE;
+      }
+    }
+    .aximo-accordion-header{
+      h3{
+        font-family: $heading-font5;
+        color: var(--heading-color4);
+        @include max(767px) {
+          font-size: 24px;
+          padding-right: 25px;
+        }
+      }
+      &::before{
+        content: none;
+      }
+    }
+    .aximo-accordion-icon {
+      position: absolute;
+      top: 4px;
+      right: 0;
+      transition: all 0.2s;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      border: 1px solid var(--green-color);
+      i{
+        font-size: 15px;
+        color: var(--green-color);
+      }
+      &.active{
+        opacity: 0;
+        border: 1px solid var(--green-bg);
+        background-color: var(--green-bg);
+        i{
+          color: var(--corn-color);
+        }
+      }
+
+    }
+    .aximo-accordion-body{
+      max-width: 750px;
+     
+    }
+  }
+}

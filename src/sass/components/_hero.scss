@@ -1,0 +1,764 @@
+.aximo-hero{
+  &-section{
+    padding: 200px 0 135px;
+    @include max(991px) {
+      padding: 170px 0 100px;
+    }
+    @include max(767px) {
+      padding: 170px 0 80px;
+    }
+    @include max(575px) {
+      padding: 130px 0 80px;
+    }
+  }
+  &-thumb{
+    right: -5%;
+    max-width: 490px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    border: 5px solid var(--white-smoke);
+    img{
+      transition: all 0.5s;
+      transform: translate3d(0, -20px, 0) scale(1.1);
+      &:hover{
+        transform: translate3d(0,0,0) scale(1);
+      }
+    }
+    @include max(1449px) {
+      position: static;
+    }
+    @include max(991px) {
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+  }
+  &-content{
+    position: relative;
+    @include max(1399px) {
+      max-width: 630px;
+    }
+    @include max(991px) {
+      text-align: center;
+    }
+    h1{
+      position: relative;
+      margin-bottom: 24px;
+      color: var(--white-smoke);
+      img{
+        top: 17px;
+        right: -17%;
+        position: absolute;
+        // -webkit-animation: rotate-animation 5s infinite linear;
+        // -moz-animation: rotate-animation 5s infinite linear;
+        // -o-animation: rotate-animation 5s infinite linear;
+        // animation: rotate-animation 5s infinite linear;
+        @include max(1400px) {
+          width: 50px;
+        }
+        @include max(767px) {
+          display: none;
+        }
+      }
+    }
+    p{
+      font-size: 21px;
+      padding-right: 125px;
+      color: var(--white-smoke);
+      @include max(991px) {
+        padding-right: 0;
+        font-size: 18px;
+      }
+    }
+  }
+  &-user{
+    &-wrap{
+      display: flex;
+      align-items: center;
+      margin-top: 45px;
+      @include max(991px) {
+        justify-content: center;
+        margin-top: 30px;
+      }
+      @include max(767px) {
+        display: block;
+      }
+    }
+    &-thumb{
+      display: flex;
+      @include max(767px) {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      &-item{
+        width: 66px;
+        height: 66px;
+        position: relative;
+        border-radius: 100%;
+        border: 5px solid var(--dark-bg);
+        overflow: hidden;
+        &:nth-child(2){
+          left: -10px;
+        }
+        &:nth-child(3){
+          left: -20px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      
+    }
+    &-data{
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+  &-shape{
+    right: 10%;
+    bottom: 0;
+    position: absolute;
+    animation: float-left-right 6s ease-in-out infinite;
+    @include max(991px) {
+      display: none;
+    }
+    img{
+      @include max(1400px) {
+        width: 250px;
+      }
+    }
+    img{
+      @include max(1199px) {
+        width: 170px;
+      }
+    }
+  }
+}
+
+.aximo-call-btn{
+  border-radius: 50px;
+  width: 350px;
+  padding: 13px 10px 13px 42px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 50px;
+  position: relative;
+  text-align: left;
+  justify-content: space-between;
+  color: var(--heading-color)!important;
+  border: 2px solid var(--dark-bg);
+  background-color: var(--accent-bg);
+  box-shadow: 0px 4px 0px 0px var(--white-smoke);
+  transition: all 0.4s;
+  @include max(400px) {
+    width: 100%;
+    padding: 13px 10px 13px 25px;
+  }
+  &:hover{
+    box-shadow: none;
+  }
+  i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    font-size: 24px;
+    color: var(--white-smoke);
+    transform: translateY(-50%);
+    background-color: var(--dark-bg);
+  }
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes float-left-right {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-40px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+// hero two
+.aximo-hero{
+  &-section2{
+    padding: 200px 0 135px;
+    @include max(1250px) {
+      padding: 170px 0 80px;
+    }
+    @include max(991px) {
+      padding: 170px 0 60px;
+    }
+    @include max(767px) {
+      padding: 170px 0 80px;
+    }
+    @include max(575px) {
+      padding: 130px 0 80px;
+    }
+  }
+  &-content2{
+    text-align: center;
+    @include max(1399px) {
+      max-width: 875px;
+      margin: 0 auto;
+    }
+    h1{
+      font-size: 118px;
+      margin-bottom: 24px;
+      letter-spacing: normal;
+      font-family: $heading-font2;
+      color: var(--heading-color);
+      @include max(1400px) { 
+        font-size: 70px;
+      }
+    
+      @include max(767px) { 
+        font-size: 48px;
+      }
+    }
+    p{
+      font-size: 21px;
+      color: var(--heading-color);
+      @include max(991px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+.aximo-hero-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  @include max(991px) {
+    margin-top: 50px;
+  }
+  @include max(991px) {
+    margin-top: 30px;
+  }
+  .aximo-default-btn{
+    margin: 10px;
+  }
+}
+
+.aximo-hero-shape1 {
+  position: absolute;
+  bottom: -10%;
+  left: -13%;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(1670px) {
+      bottom: -8%;
+      left: 0%;
+      img{
+        width: 200px;
+      }
+      
+  }
+  @include max(991px) {
+      display: none;
+  }
+}
+
+.aximo-hero-shape2 {
+  position: absolute;
+  top: -10%;
+  right: -6%;
+  animation: float-top-bottom  6s ease-in-out infinite;
+  @include max(1500px) {
+    right: 0;
+  }
+  @include max(991px) {
+    display: none;
+}
+}
+
+@keyframes float-top-bottom {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.aximo-hero-thumb {
+  &-wrap{
+    margin: 0 80px;
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    position: relative;
+    @include max(767px) {
+      display: none;
+    }
+  }
+  &-item{
+    width: 405px;
+    @include max(1399px) {
+      width: 30%;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 9.29px;
+      border: 10px solid #fff;
+    }
+  }
+  &-item:nth-child(1){
+    img{
+      transform: rotate(-2deg);
+    }
+  }
+  &-item:nth-child(2){
+    left: 18%;
+    top: 25%;
+    position: absolute;
+    img{
+      transform: rotate(2deg);
+    }
+  }
+  &-item:nth-child(3){
+    left: 39%;
+    position: absolute;
+   
+    img{
+      transform: rotate(5deg);
+    }
+  }
+  &-item:nth-child(4){
+    right: 18%;
+    top: 28%;
+    position: absolute;
+    img{
+      transform: rotate(-5deg);
+    }
+  }
+  &-item:nth-child(5){
+    right: 0;
+    position: absolute;
+    img{
+      transform: rotate(5deg);
+    }
+  }
+  
+}
+
+// hero three
+.aximo_screenfix_right {
+  margin-right: calc((-100vw + 100%)/2);
+  max-width: 1610px;
+  @include max(991px) {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.aximo-hero {
+  &-section3{
+    padding-top: 91px;
+    @include max(991px){
+      padding-top: 170px;
+    }
+    @include max(767px){
+      padding-top: 140px;
+    }
+  }
+  &-content3{
+    @include max(991px){
+      text-align: center;
+    }
+    p{
+      font-size: 21px;
+      margin-bottom: 20px;
+      @include max(1199px) {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      span{
+        font-size: 24px;
+        font-weight: 600;
+        @include max(1199px) {
+          font-size: 20px;
+        }
+      }
+    }
+    h1{
+      font-size: 124px;
+      margin-bottom: 30px;
+      letter-spacing: normal;
+      font-family: $heading-font3;
+      @include max(1669px) { 
+        font-size: 110px;
+      }
+      @include max(1400px) { 
+        font-size: 80px;
+      }
+      @include max(1199px) {
+        margin-bottom: 20px;
+      }
+      @include max(991px) { 
+        font-size: 70px;
+      }
+    
+      @include max(767px) { 
+        font-size: 48px;
+      }
+    }
+  }
+  &-thumb3{
+    &-wrap{
+      z-index: 0;
+      position: relative;
+      @include max(991px){
+        margin-top: 40px;
+      }
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    left: 3px;
+    overflow: hidden;
+    margin-left: 20px;
+    position: relative;
+    border-radius: 0 0 0 425px;
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+    @include max(1199px) {
+      margin-left: 0;
+    }
+    @include max(991px) {
+      left: 0;
+    }
+    @include max(767px) {
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
+
+.aximo-hero-thumb-shape1 {
+  position: absolute;
+  bottom: 9%;
+  z-index: -1;
+  left: -10%;
+  // -webkit-animation: rotate-animation 9s infinite linear;
+  //       -moz-animation: rotate-animation 9s infinite linear;
+  //       -o-animation: rotate-animation 9s infinite linear;
+  //       animation: rotate-animation 9s infinite linear;
+  // @include max(1550px) {
+  //   left: -2%;
+  // }
+  img{
+    @include max(1550px) {
+      width: 220px;
+    }
+  }
+}
+
+.aximo-hero-thumb-shape2 {
+  position: absolute;
+  bottom: 17%;
+  right: 16%;
+  animation: float-top-bottom  6s ease-in-out infinite;
+}
+
+.aximo-hero-thumb-shape3 {
+  position: absolute;
+  bottom: 34%;
+  right: 48%;
+}
+.aximo-hero-thumb-shape1, 
+.aximo-hero-thumb-shape2, 
+.aximo-hero-thumb-shape3{
+  @include max(767px) {
+    display: none;
+  }
+}
+.aximo-hero-subscription{
+  max-width: 526px;
+  position: relative;
+  margin-top: 50px;
+  @include max(1199px) {
+    margin-top: 30px;
+  }
+  @include max(991px) { 
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  input{
+    width: 100%;
+    padding-right: 169px!important;
+    color: var(--heading-color);
+    border: 2px solid var(--heading-color)!important;
+    @include max(991px) {
+      padding-right: 24px!important;
+    }
+
+    
+    &::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+      color:    var(--heading-color);
+      opacity: 1;
+    }
+    &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+      color:    var(--heading-color);
+      opacity:  1;
+    }
+    &::-moz-placeholder{ /* Mozilla Firefox 19+ */
+      color:    var(--heading-color);
+      opacity:  1;
+    }
+    &:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+      color:    var(--heading-color);
+      opacity: 1;
+    }
+    &::-ms-input-placeholder{ /* Microsoft Edge */
+      color:    var(--heading-color);
+      opacity: 1;
+    }
+    &::placeholder{ /* Most modern browsers support this now. */
+      color:    var(--heading-color);
+      opacity: 1;
+    }
+  }
+  
+}
+
+button#aximo-hero-subscription-btn{
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  top: 5px;
+  border-radius: 50px;
+  right: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 0 5px!important;
+  border: none !important;
+  position: absolute;
+  background-color: var(--yellow-bg);
+  .aximo-label-up {
+    display:block;
+    height:100%;
+    position:relative;
+    top:0%;
+    transition:0.3s;
+  }
+  &:hover .aximo-label-up {
+    top:-100%;
+  }
+  @include max(557px) {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+.aximo-hero-rating{
+  margin-top: 20px;
+  ul{
+    li{
+      font-weight: 600;
+      line-height: 1;
+      display: inline-block;
+      @include max(1199px) {
+        font-size: 16px;
+      }
+      &:last-child{
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+
+.aximo-hero-section4 {
+  margin: 0 50px;
+  border-radius: 20px;
+  margin-top: 80px;
+  padding: 130px 0 120px;
+  background-size: cover;
+  background-position: center;
+  @include max(991px) {
+    margin: 0 30px;
+    margin-top: 80px;
+    padding: 100px 0 90px;
+  }
+  @include max(767px) {
+    margin: 0 12px;
+    margin-top: 80px;
+    padding: 80px 0 70px;
+  }
+  @include max(479px) {
+    margin-top: 60px;
+    padding: 80px 0 70px;
+  }
+}
+
+.aximo-hero-content4{
+  @include max(991px){
+    text-align: center;
+  }
+  p{
+    margin-bottom: 20px;
+    padding-right: 100px;
+    @include max(991px){
+      padding-right: 0;
+    }
+    span{
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--orange-color2);
+    }
+  }
+  h1{
+    font-size: 120px;
+    margin-bottom: 24px;
+    color: var(--light-color3);
+    font-family: $heading-font4;
+    @include max(1669px) { 
+      font-size: 110px;
+    }
+    @include max(1400px) { 
+      font-size: 80px;
+    }
+    @include max(1199px) {
+      margin-bottom: 20px;
+    }
+    @include max(991px) { 
+      font-size: 70px;
+    }
+  
+    @include max(767px) { 
+      font-size: 48px;
+    }
+  }
+  p{
+    font-size: 21px;
+    color: var(--light-color3);
+  }
+  .aximo-hero-btn-wrap{
+    margin-top: 50px;
+    @include max(767px) {
+       margin-top: 30px;
+    }
+  }
+}
+
+.aximo-hero-shape-title{
+  z-index: 0;
+  position: relative;
+  display: inline-block;
+}
+.aximo-hero-round-shape {
+  position: absolute;
+  bottom: -19px;
+  z-index: -1;
+  @include max(767px) {
+    bottom: -10px;
+  }
+}
+
+// hero v5
+.aximo-hero{
+  &-section5{
+    padding: 195px 0 355px;
+    background-color: var(--green-bg);
+    @include max(1199px) {
+      padding: 195px 0 250px;
+    }
+    @include max(991px) {
+      padding: 170px 0 230px;
+    }
+    @include max(767px) {
+      padding: 170px 0 190px;
+    }
+    @include max(479px) {
+      padding: 130px 0 170px;
+    }
+  }
+  &-content5{
+    text-align: center;
+    @include max(1399px) {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1{
+      font-size: 120px;
+      margin-bottom: 30px;
+      color: var(--light-color4);
+      font-family: $heading-font5;
+      @include max(1669px) { 
+        font-size: 110px;
+      }
+      @include max(1400px) { 
+        font-size: 80px;
+      }
+      @include max(991px) { 
+        font-size: 60px;
+      }
+    
+      @include max(767px) { 
+        font-size: 48px;
+      }
+      @include max(479px) { 
+        font-size: 36px;
+      }
+    }
+    p{
+      font-size: 21px;
+      margin: 0 50px 24px;
+      color: var(--light-color4);
+      @include max(767px) {
+        font-size: 18px;
+        margin: 0 0 24px;
+      }
+    }
+  }
+}
+
+img.aximo-hero-wave-shape {
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  z-index: -1;
+  @include max(991px) {
+    left: 0;
+    bottom: -7px;
+  }
+}

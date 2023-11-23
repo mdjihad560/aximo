@@ -1,0 +1,178 @@
+.aximo-shape {
+  position: absolute;
+  bottom: 0;
+  right: 95px;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
+
+.aximo-thumb-shape1 {
+  position: absolute;
+  bottom: 0;
+  left: -26%;
+  // animation: float-top-bottom  6s ease-in-out infinite;
+  @include max(767px) {
+    display: none;
+  }
+
+}
+
+.aximo-thumb-shape2 {
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  // animation: float-top-bottom  6s ease-in-out infinite;
+  @include max(767px) {
+    display: none;
+  }
+
+}
+
+.aximo-iconbox-shape {
+  top: -15%;
+  right: 0;
+  position: absolute;
+  // animation: float-top-bottom  6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+  img{
+    @include max(1669px) {
+      width: 250px;
+    }
+  }
+  
+}
+
+.aximo-star-shape-half {
+  position: absolute;
+  bottom: -10%;
+  z-index: -1;
+  @include max(991px) {
+    display: none;
+  }
+  img{
+    @include max(1669px) {
+      width: 130px;
+    }
+  }
+}
+
+.aximo-star-shape-half2 {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  z-index: -1;
+  // animation: float-top-bottom  6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+  img{
+    @include max(1669px) {
+      width: 200px;
+    }
+  }
+}
+.aximo-increase-shape {
+  position: absolute;
+  top: 12%;
+  left: 9%;
+  animation: float-top-bottom  6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
+
+.aximo-v4-shape1 {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+  img{
+    @include max(1669px) {
+      width: 200px;
+    }
+  }
+}
+
+.aximo-thumb-shape4 {
+  position: absolute;
+  top: -90px;
+  left: -80px;
+  animation: float-left-right 6s ease-in-out infinite;
+ @include max(767px) {
+  display: none;
+ }
+}
+
+.aximo-v4-shape2 {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  animation: float-top-bottom  6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+   }
+   img{
+    @include max(1500px) {
+      width: 80px;
+    }
+  }
+}
+
+.aximo-v4-shape3 {
+  position: absolute;
+  top: -30px;
+  left: 105px;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+  img{
+    @include max(1669px) {
+      width: 115px;
+    }
+  }
+}
+
+.aximo-pricing-shape {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  animation: float-left-right 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+  img{
+    @include max(1669px) {
+      width: 170px;
+    }
+  }
+}
+
+
+.aximo-video-shape {
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  img{
+    @include max(1300px) {
+      width: 250px;
+    }
+    @include max(991px) {
+      width: 200px;
+    }
+  }
+  @include max(767px) {
+    display: none;
+  }
+}
+
+.aximo-wave-shape {
+  text-align: center;
+}
