@@ -462,31 +462,40 @@ blockquote {
 
 
 .dark-bg{
-  background-color: var(--dark-bg);
+  background-color: var(--dark-bg)!important;
 }
 .dark-bg2{
-  background-color: var(--dark-bg2);
+  background-color: var(--dark-bg2)!important;
 }
 .green-bg{
-  background-color: var(--green-bg);
+  background-color: var(--green-bg)!important;
+}
+.green-bg2{
+  background-color: var(--green-bg2)!important;
+}
+.cornflower-bg{
+  background-color: var(--cornflower-bg)!important;
 }
 .bg-light1{
-  background-color: var(--light-bg1);
+  background-color: var(--light-bg1)!important;
 }
 .bg-light2{
-  background-color: var(--light-bg2);
+  background-color: var(--light-bg2)!important;
 }
 .bg-light3{
-  background-color: var(--light-bg3);
+  background-color: var(--light-bg3)!important;
 }
 .bg-light4{
-  background-color: var(--light-bg4);
+  background-color: var(--light-bg4)!important;
 }
 .bg-light6{
-  background-color: var(--light-bg6);
+  background-color: var(--light-bg6)!important;
+}
+.bg-light7{
+  background-color: var(--light-bg7)!important;
 }
 .bg-orange{
-  background-color: var(--orange-bg);
+  background-color: var(--orange-bg)!important;
 }
 .z-index{
   z-index: 0;

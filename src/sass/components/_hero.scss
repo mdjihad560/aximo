@@ -698,7 +698,6 @@ button#aximo-hero-subscription-btn{
 .aximo-hero{
   &-section5{
     padding: 195px 0 355px;
-    background-color: var(--green-bg);
     @include max(1199px) {
       padding: 195px 0 250px;
     }
@@ -706,10 +705,10 @@ button#aximo-hero-subscription-btn{
       padding: 170px 0 230px;
     }
     @include max(767px) {
-      padding: 170px 0 190px;
+      padding: 170px 0 170px;
     }
     @include max(479px) {
-      padding: 130px 0 170px;
+      padding: 130px 0 140px;
     }
   }
   &-content5{
@@ -750,8 +749,8 @@ button#aximo-hero-subscription-btn{
       }
     }
   }
+  
 }
-
 img.aximo-hero-wave-shape {
   position: absolute;
   bottom: -15px;
@@ -762,3 +761,112 @@ img.aximo-hero-wave-shape {
     bottom: -7px;
   }
 }
+
+// start v6
+  .aximo-hero{
+    &-title{
+      display: flex;
+      gap: 24px;
+      align-items: flex-end;
+      img{
+        @include max(1199px) {
+          width: 200px;
+        }
+        @include max(991px) {
+          display: none;
+        }
+      }
+    }
+    &-text{
+      font-size: 115px;
+      // margin-bottom: 30px;
+      font-weight: 700;
+      line-height: 1.02em;
+      letter-spacing: -0.5px;
+      color: var(--heading-color5);
+      font-family: $heading-font6;
+      @include max(1669px) { 
+        font-size: 110px;
+      }
+      @include max(1400px) { 
+        font-size: 80px;
+        margin-bottom: 15px;
+      }
+      @include max(1199px) { 
+        font-size: 57px;
+      }
+    
+      @include max(767px) { 
+        font-size: 48px;
+        margin-bottom: 5px;
+      }
+      @include max(479px) { 
+        font-size: 40px;
+      }
+    }
+   
+  }
+
+  .aximo-marquee-one {
+    width: 365px;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    background-color: #D68BE7;
+    @include max(1199px) {
+      padding: 27px;
+    }
+    @include max(991px) {
+      display: none;
+    }
+  }
+
+  .aximo-marquee-two {
+    top: -7px;
+    width: 600px;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    border: 2px solid var(--heading-color5);
+    box-shadow: 0 4px 0 0 var(--heading-color5);
+    background-color: var(--green-color2);
+    @include max(1199px) {
+      padding: 27px;
+    }
+    @include max(991px) {
+      display: none;
+    }
+  }
+  
+  .aximo-infinite {
+    display: flex;
+    width: 250%;
+    top: 50%;
+    gap: 20px;
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(-50%);
+    animation: marquee 7s linear infinite;
+    &.two{
+      a{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-size: 24px;
+        font-weight: 700;
+        padding-right: 15px;
+        color: var(--light-color5)!important;
+        img{
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+  
+  
+  @keyframes marquee {
+    100% { right: -100%; }
+    0% { right: 0; }
+  }

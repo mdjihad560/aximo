@@ -194,6 +194,84 @@
 }
 
 
+// End six
+
+&-wrap7{
+  text-align: center;
+  margin-bottom: 30px;
+}
+&-icon7{
+  margin-bottom: 30px;
+}
+&-data7{
+  h3{
+    font-size: 40px;
+    margin-bottom: 12px;
+    font-family: $heading-font6;
+    color: var(--heading-color5);
+    @include max(1199px) {
+      font-size: 30px;
+    }
+    @include max(767px) {
+      font-size: 24px;
+    }
+  }
+  p{
+    font-size: 21px;
+    @include max(991px) {
+      font-size: 20px;
+    }
+  }
+}
+// end seven v6
+
+
+&-wrap8{
+  padding: 40px;
+  border-radius: 20px;
+  @include max(991px) {
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+&-icon8{
+  margin-bottom: 25px;
+}
+&-data8{
+  h3{
+    font-size: 40px;
+    margin-bottom: 12px;
+    font-family: $heading-font6;
+    color: var(--heading-color5);
+    @include max(1199px) {
+      font-size: 30px;
+    }
+    @include max(767px) {
+      font-size: 24px;
+    }
+  }
+  p{
+    font-size: 21px;
+    @include max(991px) {
+      font-size: 20px;
+    }
+  }
+  &.light{
+    h3, p{
+      color: var(--light-color5);
+    }
+  }
+}
+
+}
+
+
+.aximo-bottom-center {
+  text-align: center;
+  margin-top: 50px;
+  @include max(991px) {
+    margin-top: 30px;
+  }
 }
 
 .aximo-numberbox{

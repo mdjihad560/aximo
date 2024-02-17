@@ -170,3 +170,40 @@
     }
   }
 }
+
+.aximo-social-icon5{
+  ul{
+    li{
+      margin: 17px 0;
+      padding-left: 50px;
+      position: relative;
+      &:first-child{
+        margin-top: 0;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        font-size: 21px;
+        color: var(--light-color5);
+        i{
+          left: 0;
+          top: -2px;
+          font-size: 16px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: all 0.4s;
+          position: absolute;
+          background-color: #333333;
+        }
+        &:hover i{
+          background-color: var(--green-color2);
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ $heading-font2: 'ClashGroteskSemibold' !default;
 $heading-font3: 'Familjen Grotesk', sans-serif !default;
 $heading-font4: 'Arimo', sans-serif !default;
 $heading-font5: 'Libre Baskerville', serif !default;
+$heading-font6:  "Playfair Display", serif !default;
 
 // color variable
 :root {
@@ -12,6 +13,7 @@ $heading-font5: 'Libre Baskerville', serif !default;
   --heading-color2: #1B1B1B;
   --heading-color3: #191931;
   --heading-color4: #221F1A;
+  --heading-color5: #2C2C2C;
   --body-color: #0C0C0C;
   --accent-color: #BFF747;
   --white-smoke: #FDFDE1;
@@ -19,12 +21,15 @@ $heading-font5: 'Libre Baskerville', serif !default;
   --orange-color: #FF4612;
   --orange-color2: #FF8064;
   --corn-color: #F4B905;
-  --green-color: #324438;
+  --green-color: #073D30;
+  --green-color2: #02854C;
   --light-color1: #F6F5EF;
   --light-color2: #FEFCFB;
   --light-color3: #FFF7EA;
   --light-color4: #FFFCF2;
+  --light-color5: #F3EDE8;
   --dark-bg: #000000;
+  --dark-bg2: #2C2C2C;
   --white-bg: #ffffff;
   --orange-bg: #FF4612;
   --orange-bg2: #FF8064;
@@ -38,7 +43,10 @@ $heading-font5: 'Libre Baskerville', serif !default;
   --light-bg4: #FFF7EA;
   --light-bg5: #FFFDF8;
   --light-bg6: #FFFCF2;
-  --green-bg: #324438;
+  --light-bg7: #F3EDE8;
+  --green-bg: #073D30;
+  --green-bg2: #02854C;
+  --cornflower-bg: #D68BE7;
 }
 
 $colors: (

@@ -176,3 +176,24 @@
 .aximo-wave-shape {
   text-align: center;
 }
+
+.aximo-footer-shape {
+  position: absolute;
+  top: 9%;
+  right: 4%;
+  animation: float-top-bottom 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
+
+.aximo-p-shape {
+  top: 20%;
+  left: 4%;
+  z-index: -1;
+  position: absolute;
+  animation: float-top-bottom 6s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}

@@ -245,3 +245,43 @@
   
 }
 
+
+// satar v6
+
+.aximo-testimonial{
+  &-wrap5{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &-data5{
+    ul{
+      margin-bottom: 26px;
+      @include max(1199px) {
+        margin-bottom: 20px;
+      }
+      li{
+        display: inline-block;
+      }
+    }
+    h3{
+      margin-bottom: 20px;
+      font-family: $heading-font5;
+    }
+    p{
+      font-size: 21px;
+      @include max(1199px) {
+        margin-bottom: 20px;
+      }
+      @include max(991px) {
+        font-size: 20px;
+      }
+
+    }
+    h6{
+      font-family: $heading-font5;
+      span{
+        font-weight: 400;
+      }
+    }
+  }
+}

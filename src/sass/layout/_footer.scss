@@ -140,9 +140,14 @@
         margin-bottom: 17px;
       }
     }
-    &.light{
+    &.light-one{
       p{
         color: var(--light-color3);
+      }
+    }
+    &.light-two{
+      p{
+        color: var(--light-color5);
       }
     }
   }
@@ -170,7 +175,7 @@
         }
       }
     }
-    &.light{
+    &.light-one{
       ul{
         li{
           a{
@@ -178,6 +183,15 @@
             &:hover{
               color: var(--orange-color2);
             }
+          }
+        }
+      }
+    }
+    &.light-two{
+      ul{
+        li{
+          a{
+            color: var(--light-color5);
           }
         }
       }
@@ -247,18 +261,18 @@
   &-top4{
     padding: 80px 0;
   }
-  &-textarea2{
-    @include max(1199px) {
-      max-width: 600px;
-      margin-bottom: 40px;
-    }
-    img{
-      margin-bottom: 30px;
-    }
+  &-textarea{
+   &.light-one{
     p{
-      font-size: 21px;
       color: var(--light-color3);
     }
+   }
+   &.light-two{
+    p{
+      color: var(--light-color5);
+    }
+   }
+    
   }
 }
 
@@ -306,4 +320,67 @@
       }
     }
   }
+}
+
+// footer six star
+.aximo-footer-top6 {
+  padding: 80px 0 100px;
+  border-top: 1px solid #333333;
+  @include max(991px) {
+    padding: 80px 0;
+  }
+  .aximo-copywright{
+    @include max(991px) {
+      text-align: left!important;
+    }
+  }
+}
+
+.aximo-footer-extra-top {
+  padding: 125px 0 100px;
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
+
+.aximo-footer-info{
+  
+  &-wrap{
+    gap: 24px;
+    display: grid;
+    
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include max(1199px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include max(991px) {
+      margin-top: 60px;
+    }
+    @include max(767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+    width: 100%;
+    padding: 25px 15px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 0.4s;
+    color: var(--light-color5)!important;
+    border: 2px solid var(--light-color5);
+    box-shadow: 0 4px 0 0 var(--light-color5);
+    &:hover{
+      background-color: var(--green-color2);
+      border: 2px solid var(--heading-color5);
+    }
+    @include max(991px) {
+      font-size: 20px;
+      padding: 20px 15px;
+    }
+  
 }

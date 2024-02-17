@@ -1,0 +1,87 @@
+.aximo-v6-thumb1 {
+  margin-left: 70px;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: rotate(3deg);
+  @include max(1199px) {
+    margin-left: 30px;
+  }
+  @include max(991px) {
+    margin-left: 0;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    transform: rotate(0deg);
+  }
+}
+
+.aximo-v6-thumb2 {
+  margin-right: 70px;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: rotate(-3deg);
+  @include max(1199px) {
+    margin-right: 30px;
+  }
+  @include max(991px) {
+    margin-right: 0;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    transform: rotate(0deg);
+  }
+}
+.aximo-extra-mt{
+  margin-top: 45px;
+  @include max(991px) {
+    margin-top: 30px;
+  }
+}
+
+
+// star v6 iconbox slider arrow
+.aximo-iconbox-slider-arrows {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  right: 21%;
+  gap: 24px;
+  @include max(991px) {
+    top: auto;
+    right: 0;
+    bottom: 10px;
+  }
+}
+.aximo-iconbox-slider{
+  @include max(991px) {
+    padding-bottom: 140px;
+  }
+  @include max(767px) {
+    padding-bottom: 120px;
+  }
+}
+.aximo-iconbox-slider .swiper-button-prev, 
+.aximo-iconbox-slider .swiper-button-next {
+  &::after{
+    content: none;
+  }
+  position: static;
+  width: 80px;
+  height: 56px;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.4s;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--light-bg7);
+  border: 2px solid var(--heading-color5);
+  box-shadow: 0 2px 0 0 var(--heading-color5);
+  background-image: url("data:image/svg+xml,%3Csvg width='34' height='28' viewBox='0 0 34 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.0205 2C14.0205 2 13.5 8 8.02046 11.2C5.51133 12.6653 2.02046 14 2.02046 14M2.02046 14H32M2.02046 14C2.02046 14 5.46612 15.415 8.02046 16.8C14.0205 20.0533 14.0205 26 14.0205 26' stroke='%232C2C2C' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  &:hover{
+    box-shadow: none;
+  }
+}
+
+.aximo-iconbox-slider .swiper-button-next{
+  background-image: url("data:image/svg+xml,%3Csvg width='34' height='28' viewBox='0 0 34 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26' stroke='%232C2C2C' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}

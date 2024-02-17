@@ -245,7 +245,35 @@ const aximo_t_slider = new Swiper(".aximo-testimonial-slider", {
   
 });
 
-
+/*--------------------------------------------------------------
+AXIMO MAGNIFIC POPUP JS INIT
+------------------------------------------------------------*/
+var aximo_iconbox_slider = new Swiper(".aximo-iconbox-slider", {
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    900: {
+      slidesPerView: 1.5,
+    },
+    1200: {
+      slidesPerView: 1.5,
+     
+    },
+    1400: {
+      slidesPerView: 2.5,
+      
+    },
+    
+  }
+});
 
 /*--------------------------------------------------------------
 AXIMO MAGNIFIC POPUP JS INIT

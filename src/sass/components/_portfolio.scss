@@ -522,3 +522,33 @@
     }
   }
 }
+
+
+// portfolio v6
+.aximo-project{
+  &-thumb5{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    position: relative;
+    @include max(991px) {
+      border-radius: 10px;
+    }
+    .aximo-marquee-two{
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      border-radius: 0;
+      transform: translateY(-50%);
+      border-right: none;
+      border-left: none;
+      transition: all 0.4s;
+    }
+    &:hover .aximo-marquee-two{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
