@@ -22,6 +22,14 @@
   overflow: hidden;
   position: relative;
   padding: 30px;
+  @include max(991px) {
+    display: none;
+    &:nth-child(1), 
+    &:nth-child(2), 
+    &:nth-child(3){
+      display: block!important;
+    }
+  }
   &:hover .aximo-image-resizing-content{
     opacity: 1;
   }
@@ -41,7 +49,7 @@
   }
 }
 .aximo-image-resizing-item.expand {
-  flex-grow: 6;
+  flex-grow: 5;
 }
 
 
