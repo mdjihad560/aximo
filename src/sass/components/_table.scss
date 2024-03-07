@@ -172,3 +172,56 @@ img.swipeimage {
   margin-bottom: -8px;
 }
 
+
+// v7
+.aximo-service7{
+  &-wrap{
+    padding: 40px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    background-color: rgba(248, 252, 221, 0.05);
+    &:hover .aximo-service7-btn svg path{
+      fill: #4659FF;
+    }
+    @include max(991px) {
+      padding: 30px;
+      display: block;
+    }
+  }
+  &-title{
+    flex: 0 0 35%;
+    h3{
+      font-size: 38px;
+      color: var(--light-color6);
+      font-family: $heading-font7;
+      @include max(991px) {
+        font-size: 30px;
+      }
+    }
+  }
+  &-description{
+    flex: 0 0 50%;
+    padding: 0 30px;
+    @include max(991px) {
+      padding: 25px 0;
+    }
+    p{
+      font-size: 21px;
+      color: var(--light-color6);
+      @include max(991px) {
+       font-size: 20px;
+      }
+    }
+  }
+  &-btn{
+    svg{
+      path{
+        transition: all 0.4s;
+      }
+    }
+  }
+  
+}

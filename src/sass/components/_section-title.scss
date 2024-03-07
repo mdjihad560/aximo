@@ -238,6 +238,39 @@ img{
       }
     }
   }
+
+  &.bricolage-font{
+    h2{
+      font-size: 90px;
+      letter-spacing: -1px;
+      line-height: 1.05em;
+      position: relative;
+      z-index: 0;
+      font-family: $heading-font7;
+      color: var(--heading-color6);
+      @include max(1399px) { 
+        font-size: 70px;
+      }
+      @include max(1199px) { 
+        font-size: 60px;
+      }
+      @include max(767px) { 
+        font-size: 40px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+    p{
+      color: var(--heading-color);
+    }
+    
+    &.light{
+      h2, p{
+        color: var(--light-color6);
+      }
+    }
+  }
   
 }
 
@@ -369,6 +402,36 @@ img{
     }
    
   }
+  &.bricolage-font{
+    h2{
+      font-size: 90px;
+      letter-spacing: -1px;
+      line-height: 1.05em;
+      font-family: $heading-font7;
+      color: var(--heading-color6);
+      @include max(1399px) { 
+        font-size: 70px;
+      }
+      @include max(1199px) { 
+        font-size: 60px;
+      }
+      @include max(767px) { 
+        font-size: 40px;
+      }
+      @include max(575px) { 
+        font-size: 36px;
+      }
+    }
+    p{
+      color: var(--heading-color6);
+    }
+    
+    &.light{
+      h2, p{
+        color: var(--light-color6);
+      }
+    }
+  }
 }
 
 .aximo-title-icon {
@@ -405,4 +468,16 @@ img{
 .aximo-title-animation{
   position: relative;
   display: inline-block
+}
+
+.aximo-title-shape{
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  line-height: 1px;
+  z-index: -1;
+  width: 78%;
+ @include max(991px) {
+  display: none;
+ }
 }

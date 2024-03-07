@@ -129,7 +129,6 @@ $win.on('scroll', function () {
 AXIMO AUTO SLIDER JS INIT
 ------------------------------------------------------------*/
 var auto_slider = new Swiper('.aximo-auto-slider', {
-  spaceBetween: 0,
   centeredSlides: true,
   speed: 6000,
   autoplay: {
@@ -231,6 +230,34 @@ const aximo_instagram_slider = new Swiper(".aximo-instagram-slider", {
   
 });
 
+/*--------------------------------------------------------------
+AXIMO PROJECT SLIDER JS INIT
+------------------------------------------------------------*/
+const aximo_resizingslider = new Swiper(".aximo-image-resizing", {
+  loop: true,
+  // Responsive breakpoints
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    900: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+      autoplay: {
+        delay: 1,
+      },
+    },
+    1400: {
+      slidesPerView: 5,
+      
+    },
+    
+  }
+  
+});
+
 
 /*--------------------------------------------------------------
 AXIMO TESTIMONIAL SLIDER JS INIT
@@ -243,6 +270,13 @@ const aximo_t_slider = new Swiper(".aximo-testimonial-slider", {
   },
 
   
+});
+
+/*--------------------------------------------------------------
+AXIMO TESTIMONIAL SLIDER TWO JS INIT
+------------------------------------------------------------*/
+const aximo_t_slider2 = new Swiper(".aximo-testimonial-slider2", {
+  slidesPerView: 1,
 });
 
 /*--------------------------------------------------------------

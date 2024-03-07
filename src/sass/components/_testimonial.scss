@@ -285,3 +285,51 @@
     }
   }
 }
+
+
+// v7
+
+.aximo-testimonial-slider{
+  &-section{
+    position: relative;
+    background-color: #4659FF;
+  }
+  &-wrap2{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  &-rating{
+    margin-bottom: 20px;
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        display: inline-block;
+      }
+    }
+  }
+  &-description{
+    margin-bottom: 20px;
+    p{
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: var(--light-color6);
+      @include max(991px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+  &-author-data{
+    span{
+      font-weight: 600;
+    }
+    span, p{
+      color: var(--light-color6);
+    }
+  }
+}

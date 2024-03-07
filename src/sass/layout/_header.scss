@@ -1,7 +1,7 @@
 
 header.aximo-header-section {
   position: fixed;
-  z-index: 9;
+  z-index: 99;
   width: 100%;
   top: 0;
   padding: 15px 0;
@@ -16,6 +16,9 @@ header.aximo-header-section.aximo-header3{
 }
 header.aximo-header-section.aximo-header3.sticky-menu{
   border-bottom: 1px solid var(--light-bg3);
+}
+header.aximo-header-section.aximo-header7.sticky-menu{
+  background-color: var(--light-bg8);
 }
 
 

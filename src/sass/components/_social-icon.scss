@@ -207,3 +207,44 @@
     }
   }
 }
+
+.aximo-social-icon6{
+  ul{
+    li{
+      margin: 0 6px;
+      display: inline-block;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        transition: all 0.4s;
+        color: var(--heading-color6);
+        background-color: rgba(11, 16, 64, 0.1);
+        
+        &:hover{
+          color: var(--light-bg6);
+          background-color: var(--blue-bg);
+        }
+        
+      }
+    }
+  }
+  &.right{
+    text-align: right;
+    @include max(991px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+ 
+}

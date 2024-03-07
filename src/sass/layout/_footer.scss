@@ -32,6 +32,9 @@
   &.five{
     border-top: 1px solid #E6E6E6;
   }
+  &.seven{
+    border-top: 1px solid rgba(11, 16, 64, 0.1);
+  }
   
 }
 .aximo-footer-logo{
@@ -70,6 +73,11 @@
   &.five{
     p{
       color: #666;
+    }
+  }
+  &.seven{
+    p{
+      color: var(--heading-color6);
     }
   }
   
@@ -347,7 +355,6 @@
 }
 
 .aximo-footer-info{
-  
   &-wrap{
     gap: 24px;
     display: grid;
@@ -382,5 +389,49 @@
       font-size: 20px;
       padding: 20px 15px;
     }
+  
+}
+
+// footer v7
+.aximo-footer-info{
+  &-column {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 130px 0 70px;
+    justify-content: space-between;
+    @include max(991px) {
+      padding: 80px 0 50px;
+    }
+    @include max(767px) {
+      padding: 60px 0 30px;
+      display: block;
+    }
+  }
+  &-item{
+    margin-bottom: 30px;
+    &:first-child{
+      @include max(991px) {
+        flex: 0 0 100%;
+      }
+    }
+    h5{
+      font-family: $heading-font7;
+    }
+    p{
+      font-size: 21px;
+      color: var(--heading-color6);
+      @include max(991px) {
+        font-size: 20px;
+      }
+    }
+    a{
+      display: block;
+      font-size: 21px;
+      color: var(--heading-color6);
+      @include max(991px) {
+        font-size: 20px;
+      }
+    }
+  }
   
 }

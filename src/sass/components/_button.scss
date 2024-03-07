@@ -65,6 +65,12 @@
         box-shadow: none;
       }
     }
+    &.blue-btn2{
+      color: var(--light-color6)!important;
+      background-color: var(--blue-bg);
+      border: none;
+      box-shadow: none;
+    }
     
 
     &.aximo-header-btn{
@@ -117,6 +123,12 @@
         line-height: 50px;
         color: var(--green-color)!important;
         background-color: var(--corn-bg);
+      }
+      &.blue-btn2{
+        color: var(--light-color6)!important;
+        background-color: var(--blue-bg);
+        border: none;
+        box-shadow: none;
       }
     }
     &.aximo-default-btn-outline{

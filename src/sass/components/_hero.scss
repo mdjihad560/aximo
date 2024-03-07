@@ -255,17 +255,18 @@
 .aximo-hero-btn-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 24px;
   margin-top: 70px;
+  &.center{
+    justify-content: center;
+  }
   @include max(991px) {
     margin-top: 50px;
+    justify-content: center;
   }
-  @include max(991px) {
-    margin-top: 30px;
-  }
-  .aximo-default-btn{
-    margin: 10px;
+  @include max(767px) {
+    margin-top: 40px;
   }
 }
 
@@ -297,7 +298,7 @@
   }
   @include max(991px) {
     display: none;
-}
+  }
 }
 
 @keyframes float-top-bottom {
@@ -673,7 +674,7 @@ button#aximo-hero-subscription-btn{
     color: var(--light-color3);
   }
   .aximo-hero-btn-wrap{
-    margin-top: 50px;
+    margin-top: 55px;
     @include max(767px) {
        margin-top: 30px;
     }
@@ -746,6 +747,12 @@ button#aximo-hero-subscription-btn{
       @include max(767px) {
         font-size: 18px;
         margin: 0 0 24px;
+      }
+    }
+    .aximo-hero-btn-wrap{
+      margin-top: 50px;
+      @include max(767px) {
+         margin-top: 30px;
       }
     }
   }
@@ -870,3 +877,89 @@ img.aximo-hero-wave-shape {
     100% { right: -100%; }
     0% { right: 0; }
   }
+
+
+  // hero v7
+  .aximo-hero{
+    &-section7{
+      z-index: 0;
+      position: relative;
+      @include max(991px) {
+        padding: 170px 0 100px;
+      }
+      @include max(767px) {
+        padding: 170px 0 80px;
+      }
+      @include max(479px) {
+        padding: 110px 0 80px;
+      }
+    }
+    &-content7{
+      @include max(1199px) { 
+        padding-top: 50px;
+      }
+      @include max(991px) {
+        text-align: center;
+        padding-top: 0;
+      }
+
+      h1{
+        z-index: 0;
+        font-size: 140px;
+        margin-bottom: 24px;
+        position: relative;
+        color: var(--heading-color6);
+        font-family: $heading-font7;
+        @include max(1669px) { 
+          font-size: 110px;
+        }
+        @include max(1400px) { 
+          font-size: 80px;
+        }
+        @include max(1199px) { 
+          font-size: 70px;
+          margin-bottom: 15px;
+        }
+        
+
+        @include max(767px) { 
+          font-size: 48px;
+        }
+      
+      }
+      p{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        color: var(--heading-color6);
+        @include max(1199px) {
+          font-size: 20px;
+          margin: 0 0 24px;
+        }
+      }
+    }
+    &-thumb7{
+      // display: none;
+      @include max(991px) {
+        display: block;
+        margin-top: 40px;
+      }
+    }
+    &-shapev7{
+      position: absolute;
+      top: 50px;
+      left: 0;
+      z-index: -1;
+    }
+    
+  }
+
+  span.aximo-hero-shape-title2 {
+    position: absolute;
+    left: 0;
+    bottom: 13px;
+    width: 72%;
+    @include max(991px) {
+      display: none;
+    }
+}

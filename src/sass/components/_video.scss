@@ -123,6 +123,11 @@
       height: 130px
     }
   }
+  &.waves7{
+    width: 130px;
+    height: 130px;
+    background-color: #4659FF;
+  }
 }
 
 
@@ -174,3 +179,28 @@ img.aximo-video-circle{
   animation: rotate-animation 10s infinite linear;
 }
 
+// v7
+.aximo-video{
+  &-wrap2{
+    position: relative;
+    img{
+      border-radius: 10px;
+    }
+  }
+  &-popupv7{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9;
+  }
+  &-shapev7 {
+    position: absolute;
+    top: -20%;
+    left: -6%;
+    animation: float-top-bottom  6s ease-in-out infinite;
+    @include max(991px) {
+      display: none;
+    }
+  }
+  
+}
