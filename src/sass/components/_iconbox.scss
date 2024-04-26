@@ -270,7 +270,7 @@
   text-align: center;
   margin-top: 50px;
   @include max(991px) {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
@@ -336,6 +336,64 @@ a.aximo-service-icon{
     margin-left: 7px;
   }
 }
+
+.aximo-iconbox{
+  &-wrap9{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &-icon9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--blue-bg2);
+  }
+  &-data9{
+    p{
+      font-size: 21px;
+      color: var(--heading-color7);
+      span{
+        font-size: 24px;
+        font-weight: 500;
+        font-family: $heading-font8;
+      }
+    }
+  }
+}
+
+
+.aximo-iconbox{
+  &-wrap10{
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  &-icon10{
+      margin-bottom: 24px;
+  }
+  &-data10{
+    h5{
+      font-weight: 500;
+      margin-bottom: 22px;
+      color: var(--heading-color7);
+      font-family: $heading-font8;
+    }
+    p{
+      font-size: 21px;
+      color: var(--heading-color7);
+    }
+  }
+}
+
 
 
 

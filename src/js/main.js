@@ -325,10 +325,10 @@ var popup_youtube = $('.video-init');
 AXIMO IMAGE SWIPE HOVER JS INIT
 ------------------------------------------------------------*/
 
-gsap.set('.aximo-service-increase-row img.swipeimage', { yPercent: -50, xPercent: -50 });
+gsap.set('.aximo-service-increase-row img.swipeimage, .aximo-service-increase-row2 img.swipeimage', { yPercent: -50, xPercent: -50 });
 
 let activeImage;
-gsap.utils.toArray(".aximo-service-increase-row").forEach((el) => {
+gsap.utils.toArray(".aximo-service-increase-row, .aximo-service-increase-row2").forEach((el) => {
   let image = el.querySelector('img.swipeimage'),
       setX, setY,
       align = e => {

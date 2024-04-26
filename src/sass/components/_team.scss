@@ -185,3 +185,31 @@ p.aximo-skillbar-lable{
         display: none;
       }
   }
+
+
+  // end v7
+
+  .aximo-team{
+    &-wrap4{
+      margin-bottom: 30px;
+    }
+    &-thumb4{
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    &-data4{
+      padding-top: 20px;
+      h5{
+        font-family: $heading-font8;
+        margin-bottom: 5px;
+        color: var(--heading-color7);
+      }
+      p{
+        font-size: 21px;
+        color: var(--heading-color7);
+        @include max(991px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,5 @@
+.aximo-content-thumb4{
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
+}

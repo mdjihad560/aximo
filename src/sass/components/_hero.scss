@@ -963,3 +963,91 @@ img.aximo-hero-wave-shape {
       display: none;
     }
 }
+
+
+
+// hero v8
+.aximo-hero{
+  &-section8{
+    padding: 250px 0 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    &:before {
+      content: "";
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: rgba(0, 9, 55, .6);
+      mix-blend-mode: multiply;
+    }
+    @include max(1199px) {
+      padding: 195px 0 150px;
+    }
+    @include max(991px) {
+      padding: 170px 0 100px;
+    }
+    @include max(767px) {
+      padding: 170px 0 80px;
+    }
+    @include max(479px) {
+      padding: 130px 0 80px;
+    }
+  }
+  &-content8{
+    text-align: center;
+    @include max(1399px) {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1{
+      font-weight: 500;
+      font-size: 140px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      color: var(--light-color7);
+      font-family: $heading-font8;
+      @include max(1669px) { 
+        font-size: 110px;
+      }
+      @include max(1400px) { 
+        font-size: 80px;
+      }
+      @include max(991px) { 
+        font-size: 60px;
+      }
+      @include max(767px) { 
+        font-size: 48px;
+      }
+      @include max(479px) { 
+        font-size: 36px;
+      }
+    }
+    p{
+      font-size: 24px;
+      line-height: 32px;
+      max-width: 1030px;
+      margin: 0 auto;
+      color: var(--light-color7);
+      @include max(767px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    .aximo-hero-btn-wrap{
+      margin-top: 50px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      @include max(767px) {
+         margin-top: 30px;
+      }
+    }
+  }
+  
+}
